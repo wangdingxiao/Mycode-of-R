@@ -1,0 +1,6 @@
+install.packages("RODBC")
+install.packages("htmltools")
+install.packages("htmlwidgets")
+install.packages("metricsgraphics")
+install.packages("RColorBrewer")
+install.packages("xts")
