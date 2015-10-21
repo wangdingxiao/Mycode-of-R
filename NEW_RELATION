@@ -1,0 +1,2 @@
+1.选出bug的所有处理结果，调用resolution_all_num_desc.R画直方图
+数据库处理：调用sql
