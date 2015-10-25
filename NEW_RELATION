@@ -19,3 +19,10 @@ MOVED	122	已转移，转移到别的BUG分类或别的版本下
 WONTFIX保持原样 无法修复 WONTFIX
 调用pie_resolution.R画图
 PART2：
+1.选择出每一条bug的从开始处理到处理结束所用时间
+2，首先选出当what为STATUS时的Bug_ID,time ,Removed,Added放入表mozilla_bug_status中
+3，接着从表mozilla_bug_status选出每条bug的起始时间和结束时间放入bug_status_life 中，起始时间是，removed为new或reopen中的最小值，结束时间为added为VERIFIED或CLOSED中的最
+大值
+4，手动修改bug_status_life的时间数据类型为达特，计算出每条bug的持续天数
+5，按天数从，0-1,1-10,10-100,100-1000,1000以上为范围重新建表计数
+6，调用dayrange.R文件完成以上操作
